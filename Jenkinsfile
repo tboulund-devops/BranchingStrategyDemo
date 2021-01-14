@@ -4,7 +4,7 @@ pipeline {
         stage("Git merge") {
             steps {
                 sh "git fetch --all"
-                sh "git merge master"
+                sh "git merge origin/master"
             }
         }
         stage("Build") {
